@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Card, Badge, Button, LoadingSpinner, Table } from '../components/UIComponents';
+import { Card, Badge, Button, LoadingSpinner } from '../components/UIComponents';
 import { gateApi } from '../services/api';
 import type { Gate, GateStatus } from '../types';
 import { DoorOpen, Plus, RefreshCw } from 'lucide-react';

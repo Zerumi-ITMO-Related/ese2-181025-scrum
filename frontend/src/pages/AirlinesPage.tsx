@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Card, Badge, Button, LoadingSpinner, Table } from '../components/UIComponents';
+import { Card, Badge, Button, LoadingSpinner } from '../components/UIComponents';
 import { airlineApi } from '../services/api';
 import type { Airline } from '../types';
 import { Building2, Plus, RefreshCw, Star } from 'lucide-react';

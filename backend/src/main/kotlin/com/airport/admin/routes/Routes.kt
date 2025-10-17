@@ -90,7 +90,7 @@ fun Route.flightRoutes() {
             
             val deleted = Database.deleteFlight(id)
             if (deleted) {
-                call.respond(ApiResponse(success = true, message = "Flight deleted"))
+                call.respond(ApiResponse<String>(success = true, message = "Flight deleted"))
             } else {
                 call.respond(
                     HttpStatusCode.NotFound,
@@ -157,7 +157,7 @@ fun Route.airlineRoutes() {
             
             val deleted = Database.deleteAirline(id)
             if (deleted) {
-                call.respond(ApiResponse(success = true, message = "Airline deleted"))
+                call.respond(ApiResponse<String>(success = true, message = "Airline deleted"))
             } else {
                 call.respond(
                     HttpStatusCode.NotFound,
